@@ -165,5 +165,4 @@ Si el usuario ingresa `3`, la salida sería:
 
 ---
 
-Este README proporciona explicaciones accesibles y ejemplos para cada ejercicio. Si tienes alguna duda o sugerencia, no dudes en comentarla.
 
