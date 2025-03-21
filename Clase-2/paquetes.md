@@ -28,3 +28,27 @@ npm install calculador
 
 Esto va a descargar y guardara el paquete en la carpeta "node_modules" de tu proyecto.
 
+
+## SI VAMOS A USAR MODULOS AGREGAR ESTA LINEA EN EL PACKAGE.JSON
+
+"type": "module"
+
+
+{
+  "name": "ejemplo-npm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "calculador": "^1.0.2",
+    "randomcolor": "^0.6.2"
+  },
+  "type": "module"
+}
