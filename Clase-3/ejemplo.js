@@ -14,7 +14,6 @@ function obtenerPedidos(usuario) {
 }
 
 
-
 obtenerUsuarios()
   .then((usuario) => {
     console.log("Usuario obtenido: " + usuario.nombre);
