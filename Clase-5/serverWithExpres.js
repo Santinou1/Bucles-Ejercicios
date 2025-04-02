@@ -2,17 +2,20 @@ const express = require("express");
 const { usuarios, saludar } = require("./services");
 const app = express();
 
-
 app.get("/usuarios", (req, res) => {
-  res.json(usuarios);
+  res.status(200).json(usuarios);
 });
 
 app.get("/saludar", (req, res) => {
-  res.send(saludar())
+  res.status(200).send(saludar());
+});
+
+app.get("/", (req, res) => {
+  res.status(200).send("Hola Mundo desde Express");
 });
 
 app.use((req, res) => {
-  res.send("holaa prueba 3");
+  res.status(404).send("Ruta No Existe");
 });
 
 const PORT = 8080;
